@@ -21,34 +21,36 @@ The primary purpose of the provided software is to be easy to read and education
 
 ### 1. Install Eigen library.
 * On Mac
-```console
-foo@bar:~$ brew install eigen
+```
+brew install eigen
 ```
 * On Linux
-```console
-foo@bar:~$ sudo apt-get install libeigen3-dev
+```
+sudo apt-get install libeigen3-dev
 ```
 
 ### 2. Prepare build
-```console
-foo@bar:~$ mkdir build && cd build
+Creat a folder and Open
+```
+mkdir build && cd build
 ```
 
-By default cmake will install our build into the system directories.
-To define a custom install directory we simply pass it to cmake:
-```console
-foo@bar:build $ cmake .. -DCMAKE_INSTALL_PREFIX=../_install
+Configure with defaults
 ```
-Or just configure with defaults
-```console
-foo@bar:build $ cmake ..
-```
-Building and installing library
-```console
-foo@bar:build $ make all && make install
+cmake ..
 ```
 
-## Testing the library
-```console
-foo@bar:build $ ./lib_test
+Build library
+```
+make all
+```
+
+Install library (optional)
+```
+make install
+```
+
+## Test the library
+```
+./lib_test
 ```
