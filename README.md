@@ -45,7 +45,7 @@ Build library
 make all
 ```
 
-Install library (optional) in local paths
+Install library in local paths (optional)
 ```
 make install
 ```
