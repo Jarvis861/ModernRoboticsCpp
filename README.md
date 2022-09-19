@@ -41,7 +41,7 @@ cmake ..
 ```
 Or configure with [googletest](https://github.com/google/googletest.git) test. The catch.hpp has been in the repo.
 ```
-cmake .. -DURDF_BUILD_TEST=1
+cmake .. -DLIBRARY_TEST=1
 ```
 
 Build library
@@ -49,7 +49,7 @@ Build library
 make all
 ```
 
-Install library in local paths (optional)
+Install library in your local paths (optional)
 ```
 make install
 ```
