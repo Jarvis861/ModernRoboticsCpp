@@ -35,9 +35,13 @@ Creat a folder and Open
 mkdir build && cd build
 ```
 
-Configure with defaults
+Configure with defaults for only building a library
 ```
 cmake ..
+```
+Or configure with [googletest](https://github.com/google/googletest.git) test. The catch.hpp has been in the repo.
+```
+cmake .. -DURDF_BUILD_TEST=1
 ```
 
 Build library
@@ -51,6 +55,7 @@ make install
 ```
 
 ## Test the library
+The step including googletest is necessary.
 ```
 ./lib_test
 ```
