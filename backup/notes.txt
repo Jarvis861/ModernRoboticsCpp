@@ -1,0 +1,3 @@
+The files in "backup" folder are the original files with [double] data type.
+
+In pratical, we use [float] data type.
